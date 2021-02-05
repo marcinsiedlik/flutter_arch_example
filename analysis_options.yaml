@@ -1,0 +1,20 @@
+include: analysis_lint_rules.yaml
+
+analyzer:
+  strong-mode:
+    implicit-casts: false
+    implicit-dynamic: false
+
+  errors:
+    # treat missing required parameters as a warning (not a hint)
+    missing_required_param: warning
+    # treat missing returns as a warning (not a hint)
+    missing_return: warning
+
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.gr.dart"
+    - "**/*.al.dart"
+    - "**/*.config.dart"
+    - "**/*.freezed.dart"
+    - "**/*.freezed.dart"
